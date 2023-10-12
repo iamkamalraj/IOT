@@ -1,0 +1,51 @@
+https://www.tinkercad.com/
+
+- Create > Circuit
+
+-Drag and drop > Arduino Uno R3 & LED
+
+-Connect Cathode to GND & Anode to 4
+
+- Click Code and click blocks > then click TEXT and 
+
+- Ctrl A and clear ALL and start coding
+
+***ONE LIGHT***
+////////////////////////////////////////////////////
+
+void setup ()              //CONNECTION SET
+{
+  pinMode(4,OUTPUT);
+}
+void loop()                 //LIGHT ON OFF LOOP WITH TIME DELAY 
+{
+  digitalWrite(4,1);
+  delay(500);                //500 is microseconds  //1000 Microseconds is 1 Sec
+  digitalWrite(4,0);
+  delay(500);
+}
+
+
+***Three LIGHT***
+////////////////////////////////////////////////////
+
+void setup ()              //CONNECTION SET
+{
+pinMode(4,OUTPUT);
+pinMode(2,OUTPUT);
+pinMode(7,OUTPUT);
+}
+void loop()                 //LIGHT ON OFF LOOP WITH TIME DELAY 
+{
+  digitalWrite(4,1);
+  digitalWrite(2,1);
+  digitalWrite(7,1);
+  delay(500);                //500 is microseconds  //1000 Microseconds is 1 Sec
+  digitalWrite(4,0);
+  digitalWrite(2,0);
+  digitalWrite(7,0);
+  delay(500);
+}
+
+
+
