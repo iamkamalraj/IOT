@@ -48,4 +48,35 @@ void loop()                 //LIGHT ON OFF LOOP WITH TIME DELAY
 }
 
 
+***Three LIGHT*** 
+////////////////////////////////////////////////////
+000
+001
+010
+011
+100
+101
+110
+111
+
+void setup ()              //CONNECTION SET
+{
+pinMode(4,OUTPUT);
+pinMode(2,OUTPUT);
+pinMode(7,OUTPUT);
+}
+void loop()                 //LIGHT ON OFF LOOP WITH TIME DELAY 
+{
+  for(int i=0; i<2; i++){
+    for(int j=0; j<2; j++){
+      for(int k=0; k<2; k++){
+  digitalWrite(4,i);
+  digitalWrite(2,j);
+  digitalWrite(7,k);
+  delay(500);                //500 is microseconds  //1000 Microseconds is 1 Sec
+}
+    }
+  }
+}
+
 
